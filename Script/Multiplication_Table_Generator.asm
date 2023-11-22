@@ -2,7 +2,7 @@
 // This script takes a user-input quantity and generates its multiplication table.
 // The program iteratively adds the input quantity to itself, producing the multiples
 // up to 10 times the input. The results are output to the console.
-// Date Nov 11th 2023
+// Date; Nov 11th 2023
 // Created by; yesha
 
         INP
