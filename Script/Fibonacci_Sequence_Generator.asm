@@ -1,7 +1,7 @@
-# Fibonacci Sequence Generator
-# This script takes user input for the number of Fibonacci terms to generate and outputs the corresponding sequence. It includes error handling for invalid input.
-# Date; Nov 24th 2023
-# Created by; yesha
+// Fibonacci Sequence Generator
+// This script takes user input for the number of Fibonacci terms to generate and outputs the corresponding sequence. It includes error handling for invalid input.
+// Date; Nov 24th 2023
+// Created by; yesha
 
         INP
         STA TERMS
@@ -41,4 +41,4 @@ RESULT  DAT
 ONE     DAT 001
 INVALID_MSG DAT 999
 
-# End of Fibonacci Sequence Generator Program
+// End of Fibonacci Sequence Generator Program
