@@ -10,7 +10,7 @@
         LDA LIMIT        // Load the LIMIT
         BRZ END        // If it's zero, end the program
         BRP VALID        // If it's positive, proceed
-        BRA INVALID        //If it's negative, display *error message*, which is stored as the maximum value in LMC [999]
+        BRA INVALID        // If it's negative, display *error message*, which is stored as the maximum value in LMC [999]
 VALID  STA COUNT        // Valid input, continue to output odd/even numbers
         LDA COUNT        // Load the limit in COUNT
         STA NUMBER        // Initialize the current number
