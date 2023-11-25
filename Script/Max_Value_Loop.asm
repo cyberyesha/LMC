@@ -5,15 +5,15 @@
 // Date; Nov 11th 2023
 // Created by; yesha
 
-        INP
-        STA COUNTER
-LOOP    LDA COUNTER
-        BRZ ENDLOOP
-        OUT
-        ADD ONE
-        STA COUNTER
-        BRA LOOP
-ENDLOOP HLT
+        INP        // Input from the user
+        STA COUNTER        // Store it in COUNTER
+LOOP    LDA COUNTER        // Load COUNTER
+        BRZ ENDLOOP        // If it's zero, jump to ENDLOOP
+        OUT        // Output the COUNTER
+        ADD ONE        // Add one to the accumulator
+        STA COUNTER        // Store it in COUNTER
+        BRA LOOP        // Jump back to LOOP
+ENDLOOP HLT        // Stop the Script
 COUNTER DAT
 ONE     DAT 001
 
