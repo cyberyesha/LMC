@@ -5,25 +5,25 @@
 // Date; Nov 25th 2023
 // Created by; yesha
 
-        INP
-        STA LIMIT
-        LDA LIMIT
-        BRZ END
-        BRP VALID
-        BRA INVALID
-VALID  STA COUNT
-        LDA COUNT
-        STA NUMBER
-LOOP   LDA NUMBER
-        OUT
-        LDA NUMBER
-        ADD TWO
-        STA NUMBER
-        LDA NUMBER
-        SUB LIMIT
-        BRP LOOP
-        BRA END
-END	HLT
+        INP        // User input
+        STA LIMIT        // Store it in the memory location LIMIT
+        LDA LIMIT        // Load the LIMIT
+        BRZ END        // If it's zero, end the program
+        BRP VALID        // If it's positive, proceed
+        BRA INVALID        //If it's negative, display *error message*, which is stored as the maximum value in LMC [999]
+VALID  STA COUNT        // Valid input, continue to output odd/even numbers
+        LDA COUNT        // Load the limit in COUNT
+        STA NUMBER        // Initialize the current number
+LOOP   LDA NUMBER        // Loop to output odd/even current number
+        OUT        // Output the current number
+        LDA NUMBER        // Load the current number
+        ADD TWO        // Increment the number by 2 [next odd/even number]
+        STA NUMBER        // Store the updated number
+        LDA NUMBER        // Load the updated number
+        SUB LIMIT        // Subtract it from the limit
+        BRP LOOP        // If the updated number is less than or equal to the limit, continue the loop
+        BRA END        // If the updated number exceeds the limit, end the program
+END	HLT        // Stop the program
 INVALID	OUT INVALID_MSG
         HLT
 LIMIT   DAT
