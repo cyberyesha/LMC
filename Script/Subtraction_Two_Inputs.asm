@@ -6,12 +6,12 @@
 // Date; Nov 11th 2023
 // Created by; yesha
 
-INP
-STA 50
-INP
-SUB 50
-STA 50
-OUT
-HLT
+INP  // Take the first user input
+STA 50  // Store the user input in Memory Address 50
+INP  // Take the second user input
+SUB 50  // Call the input in Memory Address 50 [the first input], and subtract it from the second input
+STA 50  // Store the answer in Memory Adress 50
+OUT  // Output the result
+HLT  // Stop the program
 
 // End of Subtraction Program
