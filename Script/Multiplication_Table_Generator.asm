@@ -5,18 +5,18 @@
 // Date; Nov 11th 2023
 // Created by; yesha
 
-        INP
-        STA QUANTITY
-LOOP    LDA RESULT
-        ADD QUANTITY
-        STA RESULT
-        OUT RESULT
-        LDA SCORE
-        SUB ONE
-        STA SCORE
-        BRP LOOP
-        LDA RESULT
-        HLT
+        INP        // Get user input 
+        STA QUANTITY        // Store it in QUANTITY
+LOOP    LDA RESULT        // Load RESULT
+        ADD QUANTITY        // Add QUANTITY over the Loaded RESULT 
+        STA RESULT        // Store it in RESULT
+        OUT RESULT        // Output the RESULT
+        LDA SCORE        // Load SCORE
+        SUB ONE        // Subtract one from SCORE
+        STA SCORE        // Store it in SCORE
+        BRP LOOP        // If the number is greater or equal to 0, jump to LOOP 
+        LDA RESULT        // Load RESULT
+        HLT        // Stop the program
 QUANTITY DAT
 SCORE   DAT 009
 RESULT  DAT 000
